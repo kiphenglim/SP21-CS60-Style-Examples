@@ -17,7 +17,7 @@
  * Disclaimer: This code will not run because it doesn't have a main function.
  */
 public class Heap {
-	private int heap []; // Elements live in indices 1 to N
+	private int heap []; // elements in indices 1 to N
 	private int capacity;
 	private int size;
 
