@@ -14,7 +14,7 @@
  * An in-depth understanding of heaps are not necessary; this file simply
  * serves as an example of coding conventions we expect in CS60.
  * 
- * Disclaimer: This code will not run because it doesn't have a main function.
+ * Meta Note: This code will not run because it doesn't have a main function.
  */
 public class Heap {
 	private int heap []; // elements in indices 1 to N
