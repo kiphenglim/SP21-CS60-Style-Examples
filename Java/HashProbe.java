@@ -71,6 +71,10 @@ public class HashProbe implements Hash {
    * @return true if value was in the table, false otherwise.
    */
 	public boolean find(int value) {
+		// Meta Note: do not worry about what is actually happening in this for
+		// loop. It is testing some conditions that are special to the probe
+		// implementation of resolving collisions, which I realise are a bunch of
+		// words you may not have encountered before.
     for (int index = hashmod(value), // start at expected location
         num_lookups = 1; 
         state[index] != NEVER_USED 
@@ -120,6 +124,9 @@ public class HashProbe implements Hash {
 		}
 		return str;
 	}
+
+	// Meta Note: these functions are specific to this implementation of
+	// Hash.java so they are private.
 
 	/**
 	 * Initialises all the arrays of the class
