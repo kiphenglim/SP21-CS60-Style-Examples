@@ -6,8 +6,24 @@ convention guidelines for the Spring 2021 CS60 course at Harvey Mudd College.
 
 ## Racket
 
-These examples are still a work in progress! We didn't finish them in time for
-the few weeks of Racket at the beginning of the semester.
+We have provided two examples of complete Racket files (you can run them on
+your own machine!) that demonstrate good style and good tests.
+
+`anagram.rkt` contains a function `anagram?` that returns true if two words
+are anagrams of each other and a function `anagram-for` that uses a
+higher-order function to filter a list based on whether an element is an
+anagram of a given input. This is a relatively short file, so there isn't
+special formatting here.
+
+`sum-of-squares.rkt` contains several functions. These are `sum-of-squares`,
+`square-of-sum`, and `difference-of-sequences`. Since there are more
+functions, this file groups the functions and their tests into the same area
+and also introduces function headers, which can be useful to visually mark the
+code blocks for more complex files.
+
+The code files for these style examples are modified from
+[@exercism/racket](https://github.com/exercism/racket) on GitHub under the MIT
+License.
 
 ## Java
 
