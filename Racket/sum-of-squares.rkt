@@ -1,7 +1,7 @@
 #lang racket
 
 (require rackunit)
-(provide sum-of-squares square-of-sum difference)
+(provide sum-of-squares square-of-sum difference-of-sequences)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -61,16 +61,16 @@
 ;;; 
 ;;; inputs: n - integer maximum element in the sequence
 ;;; outputs: the difference between (square-of-sum n) and (sum-of-squares n)
-(define (difference n)
+(define (difference-of-sequences n)
   (- (square-of-sum n) (sum-of-squares n)))
 
 
 ;;; Given tests
-(check-equal? (difference 5) 170)
-(check-equal? (difference 10) 2640)
-(check-equal? (difference 100) 25164150)
+(check-equal? (difference-of-sequences 5) 170)
+(check-equal? (difference-of-sequences 10) 2640)
+(check-equal? (difference-of-sequences 100) 25164150)
 
 ;;; Additional student tests
-(check-equal? (difference 1) 0)
-(check-equal? (difference 2) 4)
-(check-equal? (difference 3) 22)
+(check-equal? (difference-of-sequences 1) 0)
+(check-equal? (difference-of-sequences 2) 4)
+(check-equal? (difference-of-sequences 3) 22)
